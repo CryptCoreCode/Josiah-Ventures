@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Josiah — notratmaster</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header class="nav-ghost">
+    <nav class="nav">
+      <div class="brand">Josiah</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#stream">Stream</a></li>
+        <li><a href="#highlights">Highlights</a></li>
+        <li><a href="#socials">Socials</a></li>
+      </ul>
+      <a class="twitch-btn" href="https://twitch.tv/notratmaster" target="_blank" rel="noopener">Watch Live</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="section hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <h1 class="name">Josiah</h1>
+            <p class="subtitle">Streamer • Tech & Games — notratmaster</p>
+            <div class="hero-cta">
+              <a class="btn primary" href="https://twitch.tv/notratmaster" target="_blank" rel="noopener">Go to Twitch</a>
+              <a class="btn ghost" href="#stream">See Stream</a>
+            </div>
+          </div>
+          <div class="hero-embed">
+            <div id="twitch-mini-embed-wrap" class="embed-wrap mini">
+              <div class="embed-placeholder">Loading preview…</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container card glass">
+        <h2>About</h2>
+        <p>I'm Josiah — developer, gamer, and streamer. I focus on clean tech content, speedruns, and relaxed viewer-friendly gameplay. Join the channel for weekly streams and clips.</p>
+      </div>
+    </section>
+
+    <section id="stream" class="section stream">
+      <div class="container">
+        <div class="card stream-card">
+          <div class="stream-header">
+            <h2>Live Stream</h2>
+            <div id="liveBadge" class="live-badge">OFFLINE</div>
+          </div>
+          <div id="twitch-embed-wrap" class="embed-wrap">
+            <div id="twitch-embed-placeholder" class="embed-placeholder">
+              <div class="embed-note">Embed will appear here — set parent domain in README when deploying.</div>
+            </div>
+          </div>
+          <div id="stream-status" class="stream-status subtle">Status unknown</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights" class="section highlights">
+      <div class="container">
+        <h2>Highlights</h2>
+        <div class="grid clips">
+          <a class="clip" href="#" aria-label="Clip 1">
+            <div class="thumb">Clip 1</div>
+            <div class="meta">Short highlight</div>
+          </a>
+          <a class="clip" href="#" aria-label="Clip 2">
+            <div class="thumb">Clip 2</div>
+            <div class="meta">Funny moment</div>
+          </a>
+          <a class="clip" href="#" aria-label="Clip 3">
+            <div class="thumb">Clip 3</div>
+            <div class="meta">Top play</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="socials" class="section socials">
+      <div class="container">
+        <h2>Find Me</h2>
+        <div class="social-list">
+          <a class="social twitch" href="https://twitch.tv/notratmaster" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden>
+              <path d="M2 3v15h4v3l3-3h4l5-5V3H2zm16 3v6l-4 4h-3l-2 2v-2H4V5h14z" fill="currentColor"/>
+            </svg>
+            Twitch
+          </a>
+          <a class="social placeholder" href="#" aria-disabled="true">Twitter</a>
+          <a class="social placeholder" href="#" aria-disabled="true">YouTube</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>&copy; <span id="year"></span> Josiah • josiah.ventures • notratmaster</small>
+    </div>
+  </footer>
+</body>
+</html>
