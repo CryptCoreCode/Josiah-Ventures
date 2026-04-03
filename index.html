@@ -1,95 +1,153 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Josiah — notratmaster</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NotRatMaster - Creator &amp; Streamer</title>
+  <meta name="description" content="Home of NotRatMaster. Apex Legends, Geometry Dash, and PEAK streams. Join the community.">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="NotRatMaster - Creator &amp; Streamer">
+  <meta property="og:description" content="Home of NotRatMaster. Apex Legends, Geometry Dash, and PEAK streams. Join the community.">
+  <meta property="og:image" content="https://notratmaster.ventures/assets/og-image.png">
+  <meta property="og:url" content="https://notratmaster.ventures">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NotRatMaster - Creator &amp; Streamer">
+  <meta name="twitter:description" content="Home of NotRatMaster. Apex Legends, Geometry Dash, and PEAK streams. Join the community.">
+  <meta name="twitter:image" content="https://notratmaster.ventures/assets/og-image.png">
+
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="js/script.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "NotRatMaster",
+        "url": "https://notratmaster.ventures",
+        "sameAs": []
+      }
+    }
+  </script>
 </head>
 <body>
-  <header class="nav-ghost">
-    <nav class="nav">
-      <div class="brand">Josiah</div>
-      <ul class="nav-links">
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="/" class="nav__logo">
+        <img src="assets/notratmasterlogo.svg" alt="NotRatMaster RM logo" width="40" height="40">
+      </a>
+
+      <ul class="nav__links">
         <li><a href="#about">About</a></li>
-        <li><a href="#stream">Stream</a></li>
-        <li><a href="#highlights">Highlights</a></li>
-        <li><a href="#socials">Socials</a></li>
+        <li><a href="#content">Content</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#community">Follow</a></li>
       </ul>
-      <a class="twitch-btn" href="https://twitch.tv/notratmaster" target="_blank" rel="noopener">Watch Live</a>
+
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="nav__toggle-line"></span>
+        <span class="nav__toggle-line"></span>
+        <span class="nav__toggle-line"></span>
+      </button>
     </nav>
+
+    <div class="nav__mobile-menu" id="mobile-menu" role="menu" hidden>
+      <ul>
+        <li role="none"><a href="#about" role="menuitem">About</a></li>
+        <li role="none"><a href="#content" role="menuitem">Content</a></li>
+        <li role="none"><a href="#schedule" role="menuitem">Schedule</a></li>
+        <li role="none"><a href="#community" role="menuitem">Follow</a></li>
+      </ul>
+    </div>
   </header>
 
-  <main>
-    <section id="hero" class="section hero">
-      <div class="container">
-        <div class="hero-grid">
-          <div class="hero-copy">
-            <h1 class="name">Josiah</h1>
-            <p class="subtitle">Streamer • Tech & Games — notratmaster</p>
-            <div class="hero-cta">
-              <a class="btn primary" href="https://twitch.tv/notratmaster" target="_blank" rel="noopener">Go to Twitch</a>
-              <a class="btn ghost" href="#stream">See Stream</a>
-            </div>
-          </div>
-          <div class="hero-embed">
-            <div id="twitch-mini-embed-wrap" class="embed-wrap mini">
-              <div class="embed-placeholder">Loading preview…</div>
-            </div>
-          </div>
+  <main id="main">
+    <section class="hero" id="hero" style="scroll-margin-top: 96px;">
+      <div class="container hero__content" data-reveal>
+        <h1 class="hero__title">NotRatMaster</h1>
+        <p class="hero__tagline">Building something cool, one stream at a time.</p>
+        <p class="hero__games">APEX LEGENDS &middot; GEOMETRY DASH &middot; PEAK</p>
+
+        <div class="hero__live-badge" hidden>
+          <span class="live-dot"></span>
+          LIVE
+        </div>
+
+        <div class="hero__cta">
+          <a href="#" class="btn btn--primary">Join the Stream</a>
+          <a href="#" class="btn btn--secondary">Follow</a>
+        </div>
+      </div>
+
+      <div class="container hero__embed" data-reveal>
+        <div class="twitch-embed-wrapper" aria-label="Twitch live stream player">
+          <div id="twitch-embed"></div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section about">
-      <div class="container card glass">
-        <h2>About</h2>
-        <p>I'm Josiah — developer, gamer, and streamer. I focus on clean tech content, speedruns, and relaxed viewer-friendly gameplay. Join the channel for weekly streams and clips.</p>
+    <section class="about" id="about" style="scroll-margin-top: 96px;">
+      <div class="container">
+        <p class="section-label">About</p>
+        <div class="about__content" data-reveal>
+          <img src="assets/notratmasterlogo.svg" alt="notratmaster logo" class="about__logo" width="64" height="64">
+          <p class="about__bio" id="about-bio">Bio loading...</p>
+        </div>
+        <div class="about__tags" id="about-tags" data-reveal data-reveal-delay="0.1s"></div>
       </div>
     </section>
 
-    <section id="stream" class="section stream">
+    <section class="content-section" id="content" style="scroll-margin-top: 96px;">
       <div class="container">
-        <div class="card stream-card">
-          <div class="stream-header">
-            <h2>Live Stream</h2>
-            <div id="liveBadge" class="live-badge">OFFLINE</div>
-          </div>
-          <div id="twitch-embed-wrap" class="embed-wrap">
-            <div id="twitch-embed-placeholder" class="embed-placeholder">
-              <div class="embed-note">Embed will appear here — set parent domain in README when deploying.</div>
-            </div>
-          </div>
-          <div id="stream-status" class="stream-status subtle">Status unknown</div>
-        </div>
+        <p class="section-label">Stats</p>
+        <div class="stats-grid" id="stats-grid"></div>
+        <div class="clips-grid" id="clips-grid" hidden></div>
       </div>
     </section>
 
-
-    <section id="socials" class="section socials">
+    <section class="schedule" id="schedule" style="scroll-margin-top: 96px;">
       <div class="container">
-        <h2>Find Me</h2>
-        <div class="social-list">
-          <a class="social twitch" href="https://twitch.tv/notratmaster" target="_blank" rel="noopener">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden>
-              <path d="M2 3v15h4v3l3-3h4l5-5V3H2zm16 3v6l-4 4h-3l-2 2v-2H4V5h14z" fill="currentColor"/>
-            </svg>
-            Twitch
-          </a>
-          <a class="social placeholder" href="#" aria-disabled="true">Twitter</a>
-          <a class="social placeholder" href="#" aria-disabled="true">YouTube</a>
+        <div class="schedule__header" data-reveal>
+          <p class="section-label">When I'm Live</p>
+          <span class="schedule__tz" id="schedule-tz"></span>
         </div>
+        <div class="schedule__card card" id="schedule-card"></div>
+        <p class="schedule__disclaimer" data-reveal>Schedule can change - follow to get notified!</p>
+      </div>
+    </section>
+
+    <section class="community" id="community" style="scroll-margin-top: 96px;">
+      <div class="container community__content">
+        <p class="section-label">Join the Community</p>
+        <h2 class="community__heading" data-reveal>Come hang out!</h2>
+        <p class="community__desc" data-reveal data-reveal-delay="0.1s">Follow for stream updates and good vibes.</p>
+        <div class="community__platforms" id="community-platforms"></div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <small>&copy; <span id="year"></span> Josiah • josiah.ventures • notratmaster</small>
+  <footer class="site-footer">
+    <div class="container footer__content">
+      <div class="footer__socials" id="footer-socials"></div>
+      <p class="footer__contact" id="footer-contact" hidden></p>
+      <p class="footer__copyright">&copy; 2026 notratmaster</p>
     </div>
   </footer>
+
+  <script src="js/site-config.js"></script>
+  <script src="https://embed.twitch.tv/embed/v1.js" defer></script>
+  <script src="js/app.js" defer></script>
 </body>
 </html>
