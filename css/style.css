@@ -424,7 +424,7 @@ h4 {
 }
 
 .twitch-embed-wrapper {
-  max-width: 720px;
+  width: 50vw;
   margin: 0 auto;
   aspect-ratio: 16 / 9;
   border-radius: var(--border-radius);
@@ -820,5 +820,9 @@ button:focus:not(:focus-visible),
   .schedule__time,
   .schedule__game {
     text-align: left;
+  }
+
+  .twitch-embed-wrapper {
+    width: 90vw;
   }
 }
