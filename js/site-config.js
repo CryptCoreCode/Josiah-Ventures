@@ -48,7 +48,7 @@ const SITE_CONFIG = {
 
   // ── Footer ──────────────────────────────────────────────
   footer: {
-    contactEmail: "contact@notratmaster",
+    contactEmail: "contact@josiah.ventures",
     copyrightYear: 2026,
   },
 };
